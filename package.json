@@ -4,6 +4,10 @@
   "description": "A react component lib with storybook, rollup.js and typescript.",
   "main": "./build/index.js",
   "module": "./build/index.es.js",
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",

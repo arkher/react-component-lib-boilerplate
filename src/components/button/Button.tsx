@@ -5,21 +5,8 @@ import "./button.css";
 /**
  * Primary UI component for user interaction
  */
-
-interface IButton {
-  primary?: boolean;
-  backgroundColor?: string;
-  size?: string;
-  label: string;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
-}
-export const Button: React.FC<IButton> = ({
-  primary,
-  backgroundColor,
-  size,
-  label,
-  ...props
-}: IButton) => {
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export const Button = ({ primary, backgroundColor, size, label, ...props }) => {
   const mode = primary
     ? "storybook-button--primary"
     : "storybook-button--secondary";
